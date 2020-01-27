@@ -1,0 +1,13 @@
+@import '../../assets/sass/variables.scss';
+
+.product-details {
+    background-color: $color-white;
+    padding: 0 $content-wrapper-gutter-half $content-wrapper-gutter;
+    margin: $content-wrapper-gutter $content-wrapper-gutter 0 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+    .product-details {
+        margin-right: 0;
+    }
+}

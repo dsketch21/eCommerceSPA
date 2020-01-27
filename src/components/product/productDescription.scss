@@ -1,0 +1,15 @@
+@import '../../assets/sass/variables.scss';
+
+.product-description {
+    padding: $content-wrapper-gutter 0 0 $content-wrapper-gutter;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .product-description {
+        padding-right: $content-wrapper-gutter;
+    }
+}

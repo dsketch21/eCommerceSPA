@@ -1,0 +1,12 @@
+@import '../../assets/sass/styles.scss';
+
+.help-chat {
+    .message-box {
+        border: 1px solid $color-dark;
+        border-bottom: none;
+        box-sizing: border-box;
+        font-size: 12px;
+        height: 150px;
+        padding: 5px;
+    }
+}

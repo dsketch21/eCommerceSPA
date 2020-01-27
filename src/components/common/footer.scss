@@ -1,0 +1,23 @@
+@import '../../assets/sass/styles.scss';
+
+footer {
+    bottom: 0;
+    max-height: 50px;
+    position: fixed;
+    width: 100%;
+
+    div {
+        align-items: center;
+        background-color: $color-dark;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        padding: $content-wrapper-gutter-half 0;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    footer {
+        position: relative;
+    }
+}

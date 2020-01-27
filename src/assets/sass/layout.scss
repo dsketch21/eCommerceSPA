@@ -1,0 +1,57 @@
+@import 'variables.scss';
+@include foundation-accordion();
+@include foundation-button();
+@include foundation-close-button();
+@include foundation-forms();
+@include foundation-table();
+@include foundation-reveal();
+@include foundation-xy-grid-classes();
+
+body {
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-title {
+    border: none;
+    color: $accordion-header-color;
+    font-size: $accordion-header-font-size;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+
+    &:focus,
+    &:active,
+    &:hover {
+        background-color: transparent;
+    }
+
+    &::before {
+        font-size: 1.6rem;
+        margin-top: -0.9rem;
+    }
+}
+
+:last-child:not(.is-active) > .accordion-title,
+:last-child > .accordion-content:last-child {
+    border: none;
+}
+
+.accordion-content {
+    border: none;
+    color: $accordion-content-font-color;
+    font-size: 0.8rem;
+    line-height: 150%;
+    padding: 0.8rem;
+}
+
+input[type='text'],
+textarea {
+    border-color: $color-dark;
+}

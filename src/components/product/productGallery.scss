@@ -1,0 +1,40 @@
+@import '../../assets/sass/variables.scss';
+
+.product-gallery {
+    position: relative;
+    max-height: calc(100vh - 100px);
+    overflow: hidden;
+    text-align: center;
+
+    img {
+        &.mainImage {
+            max-height: calc(100vh - 100px);
+            max-width: 100%;
+        }
+    }
+    .product-thumbnails {
+        position: absolute;
+        top: 0;
+        right: $content-wrapper-gutter;
+        li {
+            list-style: none;
+            img {
+                max-height: 12vh;
+                max-width: 100px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .product-gallery {
+        .product-thumbnails {
+            li {
+                img {
+                    max-height: 80px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.help-box {
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: block;
+    left: 10px;
+    padding: 10px;
+    position: fixed;
+    top: calc(100% - 100px);
+    transition: top 0.3s;
+
+    &.active {
+        top: calc(100% - 325px);
+    }
+}
+
+.helpAssistantWrapper {
+    left: 10px;
+    position: fixed;
+    top: 100%;
+    transition: top 0.3s;
+
+    &.active {
+        top: calc(100% - 275px);
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .help-box {
+        left: auto;
+        right: 10px;
+    }
+}
